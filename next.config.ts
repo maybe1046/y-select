@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  cacheComponents: true,
+  devIndicators: {
+    position: "bottom-left",
+  },
 };
 
 export default nextConfig;
