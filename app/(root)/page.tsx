@@ -8,7 +8,6 @@ export default async function Home({
   searchParams,
 }: {
   searchParams: Promise<{ query: string }>;
-  params: Promise<{ id: string }>;
 }) {
   const query = (await searchParams).query; // query string/query params
   const params = { search: query || null };

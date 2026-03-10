@@ -14,24 +14,9 @@ export function formatDate(date: string) {
 }
 
 export function formatViews(views: number) {
-  if (views === 1) {
-    return `${views} view`;
-  } else {
-    return `${views} views`;
-  }
+  return `${views ?? 0} ${views === 1 ? "view" : "views"}`;
 }
 
-export type StartupTypeCard = {
-  id: number;
-  title: string;
-  description: string;
-  views: number;
-  author: {
-    id: number;
-    name: string;
-    avatar: string;
-  };
-  _createdAt: string;
-  category: string;
-  image: string;
-};
+export function parseServerActionResponse<T>(response: T) {
+  return JSON.parse(JSON.stringify(response));
+}
