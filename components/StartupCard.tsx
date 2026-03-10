@@ -80,7 +80,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
 
 export const StartupCardSkeleton = () => (
   <>
-    {[0, 1, 2, 3, 4].map((_, i: number) => (
+    {[0, 1, 2, 3, 4].map((i) => (
       <li key={cn("skeleton", i)} className="startup-card group animate-pulse">
         <Skeleton className="startup-card_skeleton" />
       </li>
