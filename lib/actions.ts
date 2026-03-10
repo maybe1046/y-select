@@ -5,8 +5,10 @@ import { parseServerActionResponse } from "@/lib/utils";
 import { writeClient } from "@/sanity/lib/write-client";
 import slugify from "slugify";
 
+export type FormState = { error: string; status: string };
+
 export const createPitch = async (
-  state: any,
+  state: FormState,
   form: FormData,
   pitch: string,
 ) => {
