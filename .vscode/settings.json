@@ -4,6 +4,8 @@
     "/^cd \"D:\\\\Projects\\\\react\\\\js-mastery\\\\y-select\" ; git add -A ; git commit -m \"feat: add createPitch server action with slugify integration\n\n- Add lib/actions\\.ts with createPitch server action\n- Add parseServerActionResponse utility to lib/utils\\.ts\n- Simplify formatViews and remove local StartupTypeCard type\n- Wire up StartupForm to createPitch and fix post-submit routing\n- Add slugify dependency to package\\.json\"$/": {
       "approve": true,
       "matchCommandLine": true
-    }
+    },
+    "git add": true,
+    "git commit": true
   }
 }
