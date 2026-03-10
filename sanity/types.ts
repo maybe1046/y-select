@@ -169,5 +169,21 @@ export type Geopoint = {
   alt?: number;
 };
 
-export type AllSanitySchemaTypes = Startup | Markdown | Slug | Author | SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageMetadata | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityAssetSourceData | SanityImageAsset | Geopoint;
+export type AllSanitySchemaTypes =
+  | Startup
+  | Markdown
+  | Slug
+  | Author
+  | SanityImagePaletteSwatch
+  | SanityImagePalette
+  | SanityImageDimensions
+  | SanityImageMetadata
+  | SanityImageHotspot
+  | SanityImageCrop
+  | SanityFileAsset
+  | SanityAssetSourceData
+  | SanityImageAsset
+  | Geopoint;
 export declare const internalGroqTypeReferenceTo: unique symbol;
+
+export type StartupTypeCard = Omit<Startup, "author"> & { author: Author };

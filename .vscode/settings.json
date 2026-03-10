@@ -6,6 +6,7 @@
       "matchCommandLine": true
     },
     "git add": true,
-    "git commit": true
+    "git commit": true,
+    "author?.image!": true
   }
 }
