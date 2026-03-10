@@ -40,7 +40,7 @@ export const STARTUP_BY_ID_QUERY = defineQuery(`
   image,
   pitch
 }
-    `); 
+    `);
 
 export const STARTUP_VIEWS_BY_ID_QUERY = defineQuery(`
     *[_type == "startup" && _id == $id][0] {
@@ -48,3 +48,15 @@ export const STARTUP_VIEWS_BY_ID_QUERY = defineQuery(`
   views
 }
     `);
+
+export const AUTHOR_BY_GITHUB_ID_QUERY = defineQuery(`
+    *[_type == "author" && id == $id][0] {
+  _id,
+  id,
+  name,
+  username,
+  email,
+  image,
+  bio
+}
+  `);
